@@ -34,7 +34,8 @@ public class LoadTestsDataProvider {
       insertProducts(numberOfProductsToInsert);
       log.info("Load tests data insert finished in: {} seconds, inserted products: {}",
           (float) Duration.between(startTime, Instant.now()).toMillis() / 1000,
-          numberOfProductsToInsert);
+          numberOfProductsToInsert
+      );
     } else {
       log.info("No need to add load tests products, current count: {}", productsCount);
     }
